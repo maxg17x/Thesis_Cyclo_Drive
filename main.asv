@@ -1,0 +1,22 @@
+clear; clc; clf;
+geo_param = [36,4.5,15,1.5, 0, 0.005];
+mat_param = [0.28,0.28,190*10^9,190*10^9,2000,2000,10,0.002];
+X = CDA(geo_param, mat_param);
+%plot_backlash_vs_eccentricity();
+%plot_eff_vs_ratio()
+%X.efficiency(50);
+%X.F_cs\
+X.theta_shift(pi/2);
+X.plot_force_distribution();
+%X.plot_stiffness();
+% X.hertz_stiffness();
+% X.pin_backlash();
+tic;
+% X.pin_backlash();
+% X.hertz_stiffness();
+% k_vals = X.K
+% X.force_distribution();
+
+
+
+
